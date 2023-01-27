@@ -15,9 +15,9 @@ public class Board {
 
         private String content;
 
-        private String filename;
+        private String filename;//파일이름
 
-        private String filepath;
+        private String filepath;//파일경로
 
 
 }
