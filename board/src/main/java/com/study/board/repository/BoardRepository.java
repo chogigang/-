@@ -5,8 +5,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@Repository //어떤엔티티를 넣을것이냐, 엔티티의 id의 타입
 public interface BoardRepository extends JpaRepository<Board,Integer> {
 
+    /*검색기능-1*/
     Page<Board> findByTitleContaining(String searchKeyword, Pageable pageable);
 }
